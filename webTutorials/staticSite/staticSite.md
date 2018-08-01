@@ -61,7 +61,7 @@ Feel free to ignore all of the other options and click **Save**.
 
 Now your site is configured to serve your content as a static website, as opposed to a collection of files.
 
-Finally, we have to tell the bucket to accept traffic from all incoming connections. Without this you will get *403 Forbidden* errors when you try to go to your site.
+Finally, we have to tell the bucket to allow access to all resources inside it to external users. This can be done on a file-by-file basis, however for simplification we will just allow access to all files in the bucket.
 
 Navigate to the **Permissions** tab, and click on **Bucket Policy**.
 
@@ -94,4 +94,15 @@ You've successfully set up your bucket and configured it to host a website!
 
 ## Uploading Files
 
-Now it's time to upload your site files. Feel free to use your own files, otherwise you can find some sample `html`, `css`, and `js` [here](https://github.com/ethanshry/ese205TA)
+TODO: ensure link is correct
+Now it's time to upload your site files. Feel free to use your own files, otherwise you can find some sample `html`, `css`, and `js` [here](https://github.com/ethanshry/ESE205TA/tree/master/webTutorials/staticSite)
+
+Navigate to the **Overview** tab in your bucket.
+
+Click **Upload**, and either drag in your files or select them from your drive.
+
+![upload](upload.png)
+
+Click **Upload**.
+
+Wait for the upload to complete, and your're done! Navigate to your endpoint (found under **Properties>Static Website Hosting**), and assuming you've uploaded a file matching your *Index document* setting, you should see your site live!
