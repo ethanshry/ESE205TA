@@ -9,6 +9,7 @@ TODO: flush out
 We will be using Amazon S3 (Simple Storage Service) to host a static website in the cloud. You can read more about S3 [here](https://aws.amazon.com/s3/).
 
 S3 is essential a cloud file storage service. Typical use cases might include:
+
 - File storage for access by other AWS services
 - Storage of data files (i.e. `.csv`, `.tsv`, `.txt`) which you might want to process in the cloud or share amongst computers
 - Storing AWS log data or other data outputted from AWS services
